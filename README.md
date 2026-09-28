@@ -1,3 +1,3 @@
 # marathi-widget
 This is a Marathi Typing Tool
-   <script src="https://YOURUSERNAME.github.io/marathi-widget/marathi-widget.js?mode=all"></script>
+   <script src="https://sachinborse123.github.io/marathi-widget/marathi-widget.js?mode=all"></script>
