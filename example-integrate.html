@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>marathi-widget.js — Integration Examples</title>
+<style>
+  body{font-family:ui-sans-serif,system-ui,sans-serif; max-width:720px; margin:40px auto; padding:0 16px; color:#20263B;}
+  h1{font-size:22px;} h2{font-size:16px; margin-top:36px; border-top:1px solid #ddd; padding-top:20px;}
+  textarea, input[type=text]{width:100%; font-size:16px; padding:8px; margin-top:6px; box-sizing:border-box;}
+  code{background:#f1e9d6; padding:2px 6px; border-radius:4px; font-size:13px;}
+  .note{font-size:13px; color:#555;}
+</style>
+</head>
+<body>
+
+<h1>marathi-widget.js — कसं वापरायचं (उदाहरणं)</h1>
+<p class="note">
+  खालच्या प्रत्येक उदाहरणातला <code>&lt;script&gt;</code> टॅग बघा — तोच फरक आहे.
+  खरा वापर करताना <code>https://yourdomain.com/marathi-widget.js</code> ऐवजी
+  तुम्ही जिथे फाइल होस्ट कराल तो actual URL टाका.
+</p>
+
+<h2>१. mode=all — पानावरचे सगळे टेक्स्ट-फील्ड आपोआप फोनेटिक</h2>
+<textarea placeholder="इथे टाईप करा — उदा. namaskaar"></textarea>
+<input type="text" placeholder="हा इनपुटसुद्धा फोनेटिक होईल">
+<!-- <pre><code>&lt;script src="https://yourdomain.com/marathi-widget.js?mode=all"&gt;&lt;/script&gt;</code></pre> -->
+<pre><code>&lt;script src="https://marathi.site.je/marathi-widget.js?mode=all"&gt;&lt;/script&gt;</code></pre>
+
+<h2>२. mode=selective — फक्त ठराविक क्लास असलेले फील्ड</h2>
+<textarea class="marathi-input" placeholder="class='marathi-input' — हे फोनेटिक होईल"></textarea>
+<textarea placeholder="साधा टेक्स्टारिया — हा इंग्रजीच राहील"></textarea>
+<pre><code>&lt;script src="https://yourdomain.com/marathi-widget.js?mode=selective&amp;c=marathi-input"&gt;&lt;/script&gt;</code></pre>
+
+<h2>३. mode=exclusive — एक क्लास सोडून बाकी सगळे फील्ड</h2>
+<textarea placeholder="साधा फील्ड — हा फोनेटिक होईल"></textarea>
+<textarea class="no-marathi" placeholder="class='no-marathi' — हा वगळला जाईल"></textarea>
+<pre><code>&lt;script src="https://yourdomain.com/marathi-widget.js?mode=exclusive&amp;c=no-marathi"&gt;&lt;/script&gt;</code></pre>
+
+<h2>४. badge=0 — कोपऱ्यातलं ON/OFF बटण लपवायचं असेल तर</h2>
+<p class="note">उपयोगी जेव्हा तुमच्या साइटवर आधीच स्वतःचं टॉगल-बटण आहे — तेव्हा
+  <code>window.MarathiWidget.toggleAll()</code> तुमच्या बटणाला जोडा.</p>
+<pre><code>&lt;script src="https://yourdomain.com/marathi-widget.js?badge=0"&gt;&lt;/script&gt;</code></pre>
+
+<!-- ==========================================================
+     प्रत्यक्ष वापरताना फक्त हीच एक ओळ लागते (वरची उदाहरणं एकत्र
+     दाखवण्यासाठी सगळ्यांनी mode=all लोड केलं आहे — डेमो सोपा
+     राहावा म्हणून; तुमच्या प्रत्यक्ष पानावर वरीलपैकी एकच वापरा)
+     ========================================================== -->
+<!-- <script src="marathi-widget.js?mode=all"></script> -->
+
+<script src="https://marathi.site.je/marathi-widget.js?mode=all"></script>
+
+<script src="https://sachinborse123.github.io/marathi-widget/marathi-widget.js?mode=all"></script>
+    
+</body>
+</html>
